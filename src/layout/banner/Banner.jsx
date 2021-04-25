@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Banner.scss";
-import axios from "./axios.js";
-import requests from "./requests.js";
+import axios from "../../axios.js";
+import requests from "../../requests.js";
 
 const Banner = () => {
   const [movie, setMovie] = useState();
@@ -24,7 +24,7 @@ const Banner = () => {
   };
 
   return (
-    <header
+    <div
       className="banner"
       style={{
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
@@ -42,7 +42,7 @@ const Banner = () => {
         </h2>
       </div>
       <div className="banner--fadeBottom"></div>
-    </header>
+    </div>
   );
 };
 

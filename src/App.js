@@ -1,13 +1,13 @@
 import "./App.css";
-import Banner from "./Banner";
-import Nav from "./Nav";
+import Banner from "./layout/banner/Banner";
+import Header from "./layout/header/Header";
 import requests from "./requests";
-import Row from "./Row";
+import Row from "./components/row/Row";
 
 function App() {
   return (
     <div className="app">
-      <Nav />
+      <Header />
       <Banner />
       <Row
         title="NETFLIX ORIGINAL"

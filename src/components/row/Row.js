@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import YouTube from "react-youtube";
-import axios from "./axios";
+import axios from "../../axios";
 import "./Row.scss";
 import movieTrailer from "movie-trailer";
 
